@@ -12,7 +12,9 @@ import { WesTourAdComponent } from './ad-for-me/wes-tour-ad.component';
 import { WesRestaurantReviewComponent } from './ad-for-me/wes-restaurant-review.component';
 import { AdNyService} from './ad-for-me/ad-ny-service.service';
 import { PopupComponent } from './element-conversion/popup.component';
-import { PopupService} from './element-conversion/popup.service'; 
+import { PopupService} from './element-conversion/popup.service';
+import { HdirectiveDirective } from './directive-work/hdirective.directive';
+import { TdirectiveDirective } from './directive-work/tdirective.directive'; 
 
 
 @NgModule({
@@ -36,6 +38,10 @@ import { PopupService} from './element-conversion/popup.service';
     WesRestaurantReviewComponent,
 
     PopupComponent,
+
+    HdirectiveDirective,
+
+    TdirectiveDirective,
   
   ],
   entryComponents: [WesTourAdComponent, WesRestaurantReviewComponent, PopupComponent],
