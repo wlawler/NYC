@@ -1,4 +1,4 @@
-<h1>{{title}}</h1>
+<h1 appTdirective>{{title}}</h1>
 <nav>
   <a routerLink="/nightlife">Nightlife</a>
 </nav>
@@ -6,7 +6,8 @@
 <div>
 <app-ad-banner [ads]="ads"></app-ad-banner>
 </div>
-
+<p appTdirective highlightColor="yellow"> Highlighted in yellow</p>
+<p [appTdirective] ="color">Highlighted with parent component's color</p>
 <input #input value="Message">
 <button (click)="popup.showAsComponent(input.value)"> Show as component</button>
 <button (click)="popup.showAsElement(input.value)">Show as element</button>

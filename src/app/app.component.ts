@@ -17,6 +17,8 @@ export class AppComponent implements OnInit {
 
   ads: AdItem[];
 
+  color ='red';
+
   constructor(private adNyService: AdNyService,
               injector: Injector, public popup: PopupService) {
                 //convert 'PopupComponent' to a custom element. 
