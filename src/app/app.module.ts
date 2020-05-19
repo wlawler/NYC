@@ -14,7 +14,8 @@ import { AdNyService} from './ad-for-me/ad-ny-service.service';
 import { PopupComponent } from './element-conversion/popup.component';
 import { PopupService} from './element-conversion/popup.service';
 import { HdirectiveDirective } from './directive-work/hdirective.directive';
-import { TdirectiveDirective } from './directive-work/tdirective.directive'; 
+import { TdirectiveDirective } from './directive-work/tdirective.directive';
+import { ToDoComponent } from './Reserve/To-Do/to-do/to-do.component'; 
 
 
 @NgModule({
@@ -42,6 +43,8 @@ import { TdirectiveDirective } from './directive-work/tdirective.directive';
     HdirectiveDirective,
 
     TdirectiveDirective,
+
+    ToDoComponent,
   
   ],
   entryComponents: [WesTourAdComponent, WesRestaurantReviewComponent, PopupComponent],

@@ -1,0 +1,7 @@
+export class ToDoClass {
+    constructor (
+        public name: string, 
+        public day: string,
+        public value: number
+    ) { }
+}
