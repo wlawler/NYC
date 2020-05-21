@@ -15,7 +15,12 @@ import { PopupComponent } from './element-conversion/popup.component';
 import { PopupService} from './element-conversion/popup.service';
 import { HdirectiveDirective } from './directive-work/hdirective.directive';
 import { TdirectiveDirective } from './directive-work/tdirective.directive';
-import { ToDoComponent } from './Reserve/To-Do/to-do/to-do.component'; 
+import { ToDoComponent } from './Reserve/To-Do/to-do/to-do.component';
+import { DayOneComponent } from './Reserve/day-one/day-one.component';
+import { DayTwoComponent } from './Reserve/day-two/day-two.component';
+import { DayThreeComponent } from './Reserve/day-three/day-three.component';
+import { DayFourComponent } from './Reserve/day-four/day-four.component';
+import { DayFiveComponent } from './Reserve/day-five/day-five.component'; 
 
 
 @NgModule({
@@ -45,6 +50,16 @@ import { ToDoComponent } from './Reserve/To-Do/to-do/to-do.component';
     TdirectiveDirective,
 
     ToDoComponent,
+
+    DayOneComponent,
+
+    DayTwoComponent,
+
+    DayThreeComponent,
+
+    DayFourComponent,
+
+    DayFiveComponent,
   
   ],
   entryComponents: [WesTourAdComponent, WesRestaurantReviewComponent, PopupComponent],
