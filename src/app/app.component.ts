@@ -4,6 +4,7 @@ import { AdItem} from './ad-for-me/ad-item';
 import { createCustomElement} from '@angular/elements' ;
 import { PopupService} from './element-conversion/popup.service';
 import { PopupComponent} from './element-conversion/popup.component';
+import { ToDoSet} from '../app/Reserve/To-Do/to-do/to-do-set'
 
 
 
@@ -19,6 +20,7 @@ export class AppComponent implements OnInit {
 
   color ='red';
 
+  tasks = ToDoSet;
   constructor(private adNyService: AdNyService,
               injector: Injector, public popup: PopupService) {
                 //convert 'PopupComponent' to a custom element. 

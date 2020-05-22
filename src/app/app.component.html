@@ -13,7 +13,13 @@
 </nav>
 <router-outlet></router-outlet>
 
+<h3>To do task</h3>
 
+<ul class = "tbd"> 
+  <li *ngFor="let task of tasks">
+    <span class="badge">{{task.name}}</span> {{task.day}}, {{task.value}}
+  </li>
+</ul>
 
 
 
