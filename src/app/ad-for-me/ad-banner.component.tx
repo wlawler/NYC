@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy, Input, ViewChild, ComponentFactoryResolver } from '@angular/core';
-import { AdnyDirective } from './adny.directive';
-import { AdItem } from './ad-item';
-import { AdComponent} from './ad.component';
+import { AdnyDirective } from './adny.directive.tx';
+import { AdItem } from './ad-item.tx';
+import { AdComponent} from './ad.component.tx';
 
 
 @Component({

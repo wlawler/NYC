@@ -1,9 +1,8 @@
 import { Component, OnInit, Injector } from '@angular/core';
-import { AdNyService } from './ad-for-me/ad-ny-service.service';
-import { AdItem} from './ad-for-me/ad-item';
+//import { AdNyService } from './ad-for-me/ad-ny-service.service.tx';
+//import { AdItem} from './ad-for-me/ad-item.tx';
 import { createCustomElement} from '@angular/elements' ;
-import { PopupService} from './element-conversion/popup.service';
-import { PopupComponent} from './element-conversion/popup.component';
+
 import { ToDoSet} from '../app/Reserve/To-Do/to-do/to-do-set'
 
 
@@ -16,12 +15,12 @@ import { ToDoSet} from '../app/Reserve/To-Do/to-do/to-do-set'
 export class AppComponent implements OnInit {
   title = 'NYC';
 
-  ads: AdItem[];
+  //ads: AdItem[];
 
   color ='red';
 
   tasks = ToDoSet;
-  constructor(private adNyService: AdNyService,
+ /* constructor(private adNyService: AdNyService,
               injector: Injector, public popup: PopupService) {
                 //convert 'PopupComponent' to a custom element. 
                 const PopupElement = createCustomElement(PopupComponent, {injector}); 
@@ -29,8 +28,8 @@ export class AppComponent implements OnInit {
                 customElements.define('popup-element', PopupElement); 
               }
 
-
+*/
   ngOnInit() {
-   this.ads = this.adNyService.getAds();
+  // this.ads = this.adNyService.getAds();
 }
 }

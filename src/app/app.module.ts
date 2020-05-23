@@ -6,15 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NightlifeComponent } from './Night/nightlife/nightlife.component';
 
-import { AdnyDirective } from './ad-for-me/adny.directive';
-import { AdBannerComponent } from './ad-for-me/ad-banner.component';
-import { WesTourAdComponent } from './ad-for-me/wes-tour-ad.component';
-import { WesRestaurantReviewComponent } from './ad-for-me/wes-restaurant-review.component';
-import { AdNyService} from './ad-for-me/ad-ny-service.service';
-import { PopupComponent } from './element-conversion/popup.component';
-import { PopupService} from './element-conversion/popup.service';
-import { HdirectiveDirective } from './directive-work/hdirective.directive';
-import { TdirectiveDirective } from './directive-work/tdirective.directive';
+//import { AdnyDirective } from './ad-for-me/adny.directive';
+//import { AdBannerComponent } from './ad-for-me/ad-banner.component';
+//import { WesTourAdComponent } from './ad-for-me/wes-tour-ad.component';
+//import { WesRestaurantReviewComponent } from './ad-for-me/wes-restaurant-review.component';
+//import { AdNyService} from './ad-for-me/ad-ny-service.service';
+
+
 import { ToDoComponent } from './Reserve/To-Do/to-do/to-do.component';
 import { DayOneComponent } from './Reserve/day-one/day-one.component';
 import { DayTwoComponent } from './Reserve/day-two/day-two.component';
@@ -29,25 +27,23 @@ import { DayFiveComponent } from './Reserve/day-five/day-five.component';
     AppRoutingModule, 
     BrowserAnimationsModule
   ],
-  providers: [AdNyService,
-  PopupService],
+  providers: [//AdNyService,
+  ],
   
   declarations: [AppComponent,
     NightlifeComponent,
 
-    AdnyDirective,
+   // AdnyDirective,
 
-    AdBannerComponent,
+  //  AdBannerComponent,
 
-    WesTourAdComponent,
+ //   WesTourAdComponent,
 
-    WesRestaurantReviewComponent,
+  //  WesRestaurantReviewComponent,
 
-    PopupComponent,
+   
 
-    HdirectiveDirective,
-
-    TdirectiveDirective,
+   
 
     ToDoComponent,
 
@@ -62,7 +58,7 @@ import { DayFiveComponent } from './Reserve/day-five/day-five.component';
     DayFiveComponent,
   
   ],
-  entryComponents: [WesTourAdComponent, WesRestaurantReviewComponent, PopupComponent],
+  entryComponents: [/*WesTourAdComponent, WesRestaurantReviewComponent */, ],
  
   bootstrap: [AppComponent],
 

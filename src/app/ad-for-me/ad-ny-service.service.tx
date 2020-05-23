@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { WesRestaurantReviewComponent} from './wes-restaurant-review.component';
-import { WesTourAdComponent} from './wes-tour-ad.component';
-import { AdItem} from './ad-item';
+import { WesRestaurantReviewComponent} from './wes-restaurant-review.component.tx';
+import { WesTourAdComponent} from './wes-tour-ad.component.tx';
+import { AdItem} from './ad-item.tx';
  
 @Injectable()
 export class AdNyService {
