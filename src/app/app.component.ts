@@ -3,9 +3,6 @@ import { Component, OnInit, Injector } from '@angular/core';
 //import { AdItem} from './ad-for-me/ad-item.tx';
 import { createCustomElement} from '@angular/elements' ;
 
-import { ToDoSet} from '../app/Reserve/To-Do/to-do/to-do-set'
-
-
 
 @Component({
   selector: 'app-root',
@@ -15,11 +12,12 @@ import { ToDoSet} from '../app/Reserve/To-Do/to-do/to-do-set'
 export class AppComponent implements OnInit {
   title = 'NYC';
 
+  FrontPagePic =  'https://imgur.com/a/V8VaZIE'; 
+
   //ads: AdItem[];
 
   color ='red';
 
-  tasks = ToDoSet;
  /* constructor(private adNyService: AdNyService,
               injector: Injector, public popup: PopupService) {
                 //convert 'PopupComponent' to a custom element. 

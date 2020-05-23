@@ -1,1 +1,10 @@
 <h2>Things to do to make this site better</h2>
+
+<h3 class="todohead">To do task</h3>
+
+<ul class = "tdl"> 
+  <li *ngFor="let task of tasks">
+    <span class="badge">{{task.name}}</span> {{task.day}}, {{task.value}}
+  </li>
+</ul>
+
