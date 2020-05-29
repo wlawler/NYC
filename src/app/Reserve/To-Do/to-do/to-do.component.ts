@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { ToDoSet} from './to-do-set'
+import { ToDoInterface } from '../to-do-interface';
+import { ToDoServiceService } from 'src/app/to-do-service.service'
 
 
 @Component({
@@ -10,13 +12,30 @@ import { ToDoSet} from './to-do-set'
 })
 export class ToDoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private toDoServiceService: ToDoServiceService ) { }
 
   
 
-  tasks = ToDoSet;
+  //tasks = ToDoSet;
+  tasks: ToDoInterface[];
 
-  ngOnInit(): void {
+  
+
+  ngOnInit() {
+    this.getTasks();
+  }
+
+  delete(task: ToDoInterface): void {
+    this.tasks = this.tasks.filter(t => t !==task)
+  }
+  getTasks(): void {
+    this.toDoServiceService.getTasks()
+     .subscribe(tasks => this.tasks = tasks);
+  }
+  toggleDisabled(): any{
+    let deleteButton = <HTMLInputElement> document.getElementById('deleteButton');
+    deleteButton.disabled = !deleteButton.disabled; 
+    console.warn(deleteButton.disabled);
   }
 
 }

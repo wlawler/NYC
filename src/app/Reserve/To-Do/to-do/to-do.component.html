@@ -5,6 +5,10 @@
 <ul class = "tdl"> 
   <li *ngFor="let task of tasks">
     <span class="badge">{{task.name}}</span> {{task.day}}, {{task.value}}
+    <button id="deleteButton" class="delete" title="delete task"
+    (click)="delete(task)">x</button>
+    <button (click)="toggleDisabled()">Disabled the Delete Buttone </button>
   </li>
+  
 </ul>
 
