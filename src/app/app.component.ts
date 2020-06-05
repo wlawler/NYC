@@ -2,6 +2,8 @@ import { Component, OnInit, Injector } from '@angular/core';
 //import { AdNyService } from './ad-for-me/ad-ny-service.service.tx';
 //import { AdItem} from './ad-for-me/ad-item.tx';
 import { createCustomElement} from '@angular/elements' ;
+import { resetFakeAsyncZone } from '@angular/core/testing';
+
 
 
 @Component({
@@ -30,4 +32,9 @@ export class AppComponent implements OnInit {
   ngOnInit() {
   // this.ads = this.adNyService.getAds();
 }
+
+myResetFunction(event) {
+  alert("Event is bound");
+}
+pop = '8000000';
 }

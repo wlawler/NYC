@@ -2,8 +2,12 @@
 <h1 appTdirective class="center">{{title}}</h1>
 
 <div><img src={{FrontPagePic}}> </div>
-<p>Name: <input #box (keyup)="0"> </p>
+<form id="NyForm">
+<p>Name: <input #box (keyup)="0" type="text"> </p>
 <h2>Welcome {{box.value}}</h2>
+<button type="reset" (click)="myResetFunction($event)">reset</button>
+</form>
+<p>The population of NY is <span [innerHTML]="pop"></span> </p>
 <nav>
   <a routerLink="/nightlife">Nightlife</a>
   <a routerLink="/Day One">Day One</a>
@@ -15,7 +19,7 @@
 
 </nav>
 <router-outlet></router-outlet>
-
+{{1+1}}
 
 <div>
 <!--<app-ad-banner [ads]="ads"></app-ad-banner> -->
