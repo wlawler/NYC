@@ -4,7 +4,7 @@
 <div><img src={{FrontPagePic}}> </div>
 <form id="NyForm">
 <p>Name: <input #box (keyup)="0" type="text"> </p>
-<h2>Welcome {{box.value}}</h2>
+<h2 class="welcome">Welcome {{box.value}}</h2>
 <button type="reset" (click)="myResetFunction($event)">reset</button>
 </form>
 <p>The population of NY is <span [innerHTML]="pop"></span> </p>

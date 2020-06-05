@@ -20,4 +20,8 @@ nav a {
   h1.center {
     text-align: center;
   }
+
+  .welcome {
+    font-style: italic
+  }
   
