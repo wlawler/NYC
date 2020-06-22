@@ -31,8 +31,7 @@ export class AppComponent implements OnInit {
 */
   ngOnInit() {
   // this.ads = this.adNyService.getAds();
-  this.settestNgClasses();
-  this.setCurrentStyles();
+  
 }
 
 myResetFunction(event) {
@@ -42,23 +41,5 @@ pop = '8000000';
 
 
 
-madeRed = true;
-madeUnderlined = false;
-//This is a test of NgClass, changes the text to red font color and underlined-->// 
-testNgClasses: {};
-settestNgClasses()  {
-this.testNgClasses  = {
-  makeMeRed: this.madeRed,
-  makeMeUnderlined: this.madeUnderlined,
 }
-};
-//CSS Styles set per current state of component properties 
-CurrentStyles: {}; 
-setCurrentStyles () {
-this.CurrentStyles = {
-'font-color': !this.madeRed ? 'Red' : 'Blue',
-'text-decoration': this.madeUnderlined ?'underline' : 'line-through',
 
-};
-}
-}
