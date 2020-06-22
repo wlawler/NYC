@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 import { ToDoSet} from './to-do-set'
 import { ToDoInterface } from '../to-do-interface';
@@ -37,5 +37,10 @@ export class ToDoComponent implements OnInit {
     deleteButton.disabled = !deleteButton.disabled; 
     console.warn(deleteButton.disabled);
   }
+  /*
+  @output()
+  counting = new EventEmitter<any>();
+
+  */
 
 }

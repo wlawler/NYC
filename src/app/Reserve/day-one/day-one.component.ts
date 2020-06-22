@@ -9,7 +9,8 @@ export class DayOneComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
+
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit, Injector } from '@angular/core';
+import { Component, OnInit, Injector, AfterViewInit } from '@angular/core';
 //import { AdNyService } from './ad-for-me/ad-ny-service.service.tx';
 //import { AdItem} from './ad-for-me/ad-item.tx';
 import { createCustomElement} from '@angular/elements' ;
@@ -31,10 +31,34 @@ export class AppComponent implements OnInit {
 */
   ngOnInit() {
   // this.ads = this.adNyService.getAds();
+  this.settestNgClasses();
+  this.setCurrentStyles();
 }
 
 myResetFunction(event) {
   alert("Event is bound");
 }
 pop = '8000000';
+
+
+
+madeRed = true;
+madeUnderlined = false;
+//This is a test of NgClass, changes the text to red font color and underlined-->// 
+testNgClasses: {};
+settestNgClasses()  {
+this.testNgClasses  = {
+  makeMeRed: this.madeRed,
+  makeMeUnderlined: this.madeUnderlined,
+}
+};
+//CSS Styles set per current state of component properties 
+CurrentStyles: {}; 
+setCurrentStyles () {
+this.CurrentStyles = {
+'font-color': !this.madeRed ? 'Red' : 'Blue',
+'text-decoration': this.madeUnderlined ?'underline' : 'line-through',
+
+};
+}
 }

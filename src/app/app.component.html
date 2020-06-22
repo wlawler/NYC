@@ -20,10 +20,12 @@
 </nav>
 <router-outlet></router-outlet>
 {{1+1}}
-
+<h2 [ngClass]="testNgClasses" >day-one works!</h2>
 <div>
 <!--<app-ad-banner [ads]="ads"></app-ad-banner> -->
-</div> 
+</div>
+<!-- <app-reset-counter 
+      (counting)="countingToDo($event)--> 
 
 <h1>app component is parent</h1>
 <p>make a reset with a counter </p>
