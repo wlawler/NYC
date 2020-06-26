@@ -10,6 +10,8 @@ export class DayThreeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  
   }
 
+  testingNgIf = true ;
 }
