@@ -1,1 +1,16 @@
-<p>day-four works!</p>
+<p> Your going to: </p>
+
+<div>
+    <label *ngFor="let borough of boroughs">
+      <input type="radio" name="boroughs" [(ngModel)]="currentBorough" [value]="borough">{{b.name}}
+    </label>
+  </div>
+
+<div [ngSwitch]="currentHero.emotion">
+    <app-unknown-Borough *ngSwitchDefault   [borough]="currentBorough"></app-unknown-Borough>
+    <app-Rich-Borough    *ngSwitchCase="Rich"    [borough]="currentBorough"></app-happy-Borough>
+    <app-Hip-Borough      *ngSwitchCase="Hip"      [borough]="currentBorough"></app-sad-Borough>
+    <app-Dominican-Borough  *ngSwitchCase="Dominican"           [borough]="currentBorough"></app-Dominican-Borough>
+    <app-Drunk-Borough *ngSwitchCase="Drunk" [borough]="currentBorough"></app-Drunk-Borough>
+    <app-Lost-Borough *ngSwitchCase="Lost" [borough]="currentBorough"></app-Lost-Borough>
+  </div>
