@@ -5,6 +5,7 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NightlifeComponent } from './Night/nightlife/nightlife.component';
+import{ BoroughSwitchComponent} from './Reserve/day-four/Borough-Switch';
 
 //import { AdnyDirective } from './ad-for-me/adny.directive';
 //import { AdBannerComponent } from './ad-for-me/ad-banner.component';
@@ -59,6 +60,8 @@ import { ResetCounterComponent } from './reset-counter/reset-counter.component';
     DayFiveComponent,
 
     ResetCounterComponent,
+
+    BoroughSwitchComponent
   
   ],
   entryComponents: [/*WesTourAdComponent, WesRestaurantReviewComponent */, ],

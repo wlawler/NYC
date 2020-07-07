@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Borough} from './borough';
 
 @Component({
   selector: 'app-day-four',
@@ -12,4 +13,5 @@ export class DayFourComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  boroughs: Borough[]; 
 }
