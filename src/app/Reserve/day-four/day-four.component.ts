@@ -14,4 +14,6 @@ export class DayFourComponent implements OnInit {
   }
 
   boroughs: Borough[]; 
+
+  currentBorough: Borough;
 }
