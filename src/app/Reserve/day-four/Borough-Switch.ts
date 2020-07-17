@@ -45,7 +45,16 @@ export class DrunkBoroughComponent {
 export class LostBoroughComponent {
     @Input() borough: Borough; 
 }
+/*
+Component({
+    selector: 'app-unknown-Borough', 
+    template: 'Unknown' 
+})
 
+export class UnknownComponent {
+    @Input() borough: Borough; 
+}
+*/
 
 export const BoroughSwitchComponent  = 
 [RichBoroughComponent,HipBoroughComponent,DominicanBoroughComponent,DrunkBoroughComponent,LostBoroughComponent

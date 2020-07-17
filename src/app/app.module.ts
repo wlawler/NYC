@@ -21,13 +21,14 @@ import { DayThreeComponent } from './Reserve/day-three/day-three.component';
 import { DayFourComponent } from './Reserve/day-four/day-four.component';
 import { DayFiveComponent } from './Reserve/day-five/day-five.component';
 import { ResetCounterComponent } from './reset-counter/reset-counter.component'; 
-
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    BrowserAnimationsModule
+    BrowserAnimationsModule, 
+    FormsModule
   ],
   providers: [//AdNyService,
   ],

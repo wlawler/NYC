@@ -7,10 +7,11 @@
   </div>
 
 <div [ngSwitch]="currentBorough.emotion">
-    <app-unknown-Borough *ngSwitchDefault   [borough]="currentBorough"></app-unknown-Borough>
+   <!-- <app-unknown-Borough *ngSwitchDefault   [borough]="currentBorough"></app-unknown-Borough>-->
     <app-Rich-Borough    *ngSwitchCase="'Rich'"    [borough]="currentBorough"></app-Rich-Borough>
     <app-Hip-Borough      *ngSwitchCase="'Hip'"      [borough]="currentBorough"></app-Hip-Borough>
     <app-Dominican-Borough  *ngSwitchCase="'Dominican'"           [borough]="currentBorough"></app-Dominican-Borough>
     <app-Drunk-Borough *ngSwitchCase="'Drunk'" [borough]="currentBorough"></app-Drunk-Borough>
     <app-Lost-Borough *ngSwitchCase="'Lost'" [borough]="currentBorough"></app-Lost-Borough>
+
   </div>

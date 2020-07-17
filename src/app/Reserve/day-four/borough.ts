@@ -16,4 +16,7 @@ export class Borough {
     ) {
         this.id = id ? id: Borough.nextId++;
     }
+    clone(): Borough {
+        return Object.assign(new Borough(), this)
+    }
 }
