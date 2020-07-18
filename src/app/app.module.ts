@@ -22,6 +22,7 @@ import { DayFourComponent } from './Reserve/day-four/day-four.component';
 import { DayFiveComponent } from './Reserve/day-five/day-five.component';
 import { ResetCounterComponent } from './reset-counter/reset-counter.component'; 
 import {FormsModule} from '@angular/forms';
+import { GoalComponent } from './Reserve/day-five/goal/goal.component';
 
 @NgModule({
   imports: [
@@ -62,7 +63,9 @@ import {FormsModule} from '@angular/forms';
 
     ResetCounterComponent,
 
-    BoroughSwitchComponent
+    BoroughSwitchComponent,
+
+    GoalComponent
   
   ],
   entryComponents: [/*WesTourAdComponent, WesRestaurantReviewComponent */, ],

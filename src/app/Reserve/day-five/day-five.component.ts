@@ -11,5 +11,5 @@ export class DayFiveComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+currentGoal="Find out whose buried in Grant's Tomb"
 }
