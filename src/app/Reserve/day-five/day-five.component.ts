@@ -11,5 +11,13 @@ export class DayFiveComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 currentGoal="Find out whose buried in Grant's Tomb"
+
+
+findOutMessage = ""; 
+
+onFindOut() {
+  this.findOutMessage = " Its Grant ";
+}
 }
