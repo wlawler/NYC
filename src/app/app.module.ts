@@ -23,19 +23,23 @@ import { DayFiveComponent } from './Reserve/day-five/day-five.component';
 import { ResetCounterComponent } from './reset-counter/reset-counter.component'; 
 import {FormsModule} from '@angular/forms';
 import { GoalComponent } from './Reserve/day-five/goal/goal.component';
+import {KeyPressComponent, KeyDownComponent, KeyEnterComponent} from './Reserve/day-two/keypress.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule, 
     BrowserAnimationsModule, 
-    FormsModule
+    FormsModule, 
   ],
   providers: [//AdNyService,
   ],
   
   declarations: [AppComponent,
     NightlifeComponent,
+    KeyPressComponent,
+    KeyDownComponent,
+    KeyEnterComponent,
 
    // AdnyDirective,
 
