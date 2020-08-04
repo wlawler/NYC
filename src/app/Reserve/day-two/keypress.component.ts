@@ -45,3 +45,19 @@ export class KeyEnterComponent {
     onEnter(value:string) { this.value = value;
     }
 }
+
+@Component({
+    selector: 'app-key-blur',
+    template: `
+    <input #box (keyup.enter)="update(box.value)"
+    (blur)="update(box.value)"> 
+    <p>{{value}}</p>
+`
+})
+export class KeyBlurComponent {
+
+    value=''; 
+
+    update(value:string) { this.value = value;
+    }
+}

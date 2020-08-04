@@ -23,7 +23,7 @@ import { DayFiveComponent } from './Reserve/day-five/day-five.component';
 import { ResetCounterComponent } from './reset-counter/reset-counter.component'; 
 import {FormsModule} from '@angular/forms';
 import { GoalComponent } from './Reserve/day-five/goal/goal.component';
-import {KeyPressComponent, KeyDownComponent, KeyEnterComponent} from './Reserve/day-two/keypress.component';
+import {KeyPressComponent, KeyDownComponent, KeyEnterComponent, KeyBlurComponent} from './Reserve/day-two/keypress.component';
 
 @NgModule({
   imports: [
@@ -40,6 +40,7 @@ import {KeyPressComponent, KeyDownComponent, KeyEnterComponent} from './Reserve/
     KeyPressComponent,
     KeyDownComponent,
     KeyEnterComponent,
+    KeyBlurComponent,
 
    // AdnyDirective,
 
