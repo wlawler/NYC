@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
-import { ToDoSet} from './to-do-set'
+import { ToDoSet} from './to-do-set';
 import { ToDoInterface } from '../to-do-interface';
 import { ToDoServiceService } from 'src/app/to-do-service.service'
 
@@ -42,5 +42,10 @@ export class ToDoComponent implements OnInit {
   counting = new EventEmitter<any>();
 
   */
+ addTask(newTask: string) {
+   if (newTask) {
+     this.tasks.push(newTask);
+   }
+ }
 
 }

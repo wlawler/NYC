@@ -2,7 +2,11 @@
 
 <h3 class="todohead">To do task</h3>
 <p><i>Add a task</i></p>
+<input #newTasks
+   (keyup.enter)="addTask(newTask.value)"
+   (blur)="addTask(newTask.value); newTask.value=''">
 
+   <button (click)="addTask(newTask.value)">Add</button>
 
 <ul class = "tdl"> 
   <li *ngFor="let task of tasks">
